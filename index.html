@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <section>
+      <div class="container">
+         <div class="cart" id="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item" id="cart-item-1">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product-1.png" alt="">
+                        <h5>iPhone 11 128GB Black</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button onclick="handleProductChange('phone', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="phone-input" type="text" class="form-control text-center" value="1">
+                           <button onclick="handleProductChange('phone', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5 id="phone-total">$519</h5>
+                        <img src="images/remove.png" alt="" class="remove-item" id="remove-item-1">
+                     </div>
+                  </div>
+               </div>
+               
+
+               <div class="cart-item" id="cart-item-2">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product-2.png" alt="">
+                        <h5>iPhone 11 Silicone Case - Black</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button onclick="handleProductChange('case', false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="case-input" type="text" class="form-control text-center" value="1">
+                           <button onclick="handleProductChange('case', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5 id="case-total">$59</h5>
+                        <img src="images/remove.png" alt="" id="remove-item-2"  class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+
+                     <div class="col-md-8">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-md-4 status">
+                        <h5 id="subTotalPrice">$0</h5>
+                        <h5 id="tax-amount">$0</h5>
+                        <h5 id="totalPrice">$0</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                  <button id="btn" type="button" class="btn check-out">Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>   
+   </section>
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
